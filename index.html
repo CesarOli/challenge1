@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" href="index.css">
+		<title>Decodificador</title>
+</head>
+	<body>
+		<header>
+				<img class="logoAlura" src="vector.png" alt="Logo da Escola Alura">
+				<h1>“Challenge ONE - Decodificador de Texto</h1>
+		</header>
+		<main>
+			<section>
+					<textarea id="textoEncriptado" oninput="removerAcentos()" onkeypress="permitirApenasLetrasENumeros(event)" class="caixa_entrada_de_texto" cols="41" rows="4" required placeholder="digite a mensagem que deseja criptografar"></textarea>
+					<div class="frase_informativa">
+						<h6>apenas letras minusculas e sem acentos!!</h6>
+					</div>
+					<div class="dois_botoes">
+						<button class="botao_crip" onclick="botaoCriptografar()">criptografar</button>
+						<button class="botao_descrip" onclick="botaoDescriptografar()">descriptografar</button>
+					</div>
+			</section>
+
+			<section>
+					<textarea  class="caixa_saida_de_texto" cols="28" rows="10"></textarea>
+					<div>
+						<input type="image" class="icone_copiar" onclick="copiarMensagem()" src="icone_copiar.png" alt="icone botao copiar mensagem criptogragada">
+						<button class="botao_copiar" onclick="copiarMensagem()" >copiar</button>
+					</div>
+						
+			</section>	
+		</main>
+			<footer>
+				<a href="https://github.com/CesarOli" target="_blank">
+					<img class="logoGit" src="github.gif" alt="logo GitHub animado">
+				</a>
+				<p class="copyright">&copy; Copyright - Desenvolvido por César Alexandre Oliveira Abril-2023. </p>
+			</footer>
+			<script src="script.js" type="text/javascript"></script>
+	</body>
+</html>
